@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>AA Description Generator</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+		<script type="text/javascript">
+			function ShowHide1(restcheck) {
+				var showHide = document.getElementById("shrest");
+				showHide.style.display = restcheck.checked ? "block" : "none";
+			}
+			function ShowHide2(offlineCheck) {
+				var showHide = document.getElementById("show_offline");
+				showHide.style.display = offlineCheck.checked ? "block" : "none";
+			}
+			function ShowHide3(quirkscheck) {
+				var showHide = document.getElementById("show_quirks");
+				showHide.style.display = quirkscheck.checked ? "block" : "none";
+			}
+		</script>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+            <div class="container px-5">
+                <a class="navbar-brand fw-bold" href="#page-top">AA Description Generator</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <li class="nav-item">
+							<a href="mailto:d.r.j.jones@leeds.ac.uk?subject=Feedback - AA Description Generator" target="_blank"><button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0">
+								<span class="d-flex align-items-center">
+									<i class="bi-chat-text-fill me-2"></i>
+									<span class="small">Send Feedback</span>
+								</span>
+							</button></a>
+						</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Mashead header-->
+        <header class="masthead text-center bg-gradient-primary-to-secondary text-white">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-12">
+						<h1 class="font-alt">Generate your AppsAnywhere app description below.</h1>
+						<div class="linebreak"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Quote/testimonial aside-->
+			<aside>
+				<div class="container px-5">
+					<div class="row gx-5 justify-content-center">
+						<div class="col-xl-12">
+							<!-- App Name input-->
+							<div class="form-floating mb-3">
+								<input class="form-control" id="appName" type="text" placeholder="Enter software name..." data-sb-validations="required" />
+								<label for="name">Software Name</label>
+								<div class="invalid-feedback" data-sb-feedback="appName:required">A name is required.</div>
+							</div>
+							<!-- App Description input-->
+							<div class="form-floating mb-3">
+								<textarea class="form-control" id="appDesc" placeholder="Enter software description..." data-sb-validations="required" style="min-height:250px;"></textarea>
+								<label for="name">Software Description - Starts with the application name in bold (see once generated)</label>
+								<div class="invalid-feedback" data-sb-feedback="appDesc:required">A name is required.</div>
+							</div>
+							<!-- App availability input-->
+							<br/>
+							<h4 class="font-alt">Where can this software be accessed?</h4>
+							<br/>
+							<div class="mb-3">
+								<div class="form-control mb-3">
+									<input type="checkbox" id="box1" data-sb-validations="required" class="form-check-input"/>
+									<label for="box1">Clusters</label>
+								</div>
+								<div class="form-control mb-3">
+									<input type="checkbox" id="box2" data-sb-validations="required" class="form-check-input"/>
+									<label for="box2">Cluster Remote Access</label>
+								</div>
+								<div class="form-control mb-3">
+									<input type="checkbox" id="box3" data-sb-validations="required" class="form-check-input"/>
+									<label for="box3">Virtual Windows Desktop</label>
+								</div>
+								<div class="form-control mb-3">
+									<input type="checkbox" id="box4" data-sb-validations="required" class="form-check-input"/>
+									<label for="box4">Personal Windows Devices</label>
+								</div>
+								<div class="form-control mb-3">
+									<input type="checkbox" id="box11" data-sb-validations="required" class="form-check-input"/>
+									<label for="box11">Staff and Postgraduate Windows Devices</label>
+								</div>
+								<div class="form-control mb-3">
+									<input type="checkbox" id="box5" data-sb-validations="required" class="form-check-input"/>
+									<label for="box5">Personal Windows Devices (VPN)</label>
+								</div>
+								<div class="form-control mb-3">
+									<input type="checkbox" id="box6" data-sb-validations="required" class="form-check-input"/>
+									<label for="box6">Personal macOS Devices (Download only)</label>
+								</div>
+								<div class="form-control mb-3">
+									<input type="checkbox" id="box7" data-sb-validations="required" class="form-check-input"/>
+									<label for="box7">Personal Linux Devices (Download only)</label>
+								</div>
+								<div class="form-control mb-3">
+									<input type="checkbox" id="box8" data-sb-validations="required" class="form-check-input"/>
+									<label for="box8">macOS Devices (Download only)</label>
+								</div>
+								<div class="form-control mb-3">
+									<input type="checkbox" id="box9" data-sb-validations="required" class="form-check-input"/>
+									<label for="box9">Linux Devices (Download only)</label>
+								</div>
+								<div class="form-control mb-3">
+									<input type="checkbox" id="box10" data-sb-validations="required" class="form-check-input"/>
+									<label for="box10">Windows Download (University-Owned)</label>
+								</div>
+							</div>
+							<!-- App Restriction input-->
+							<br/>
+							<h4 class="font-alt">Is this application restricted?</h4>
+							<br/>
+							<div class="mb-3">
+								<div class="form-control mb-3">
+									<input type="checkbox" id="restcheck" data-sb-validations="required" class="form-check-input" onclick="ShowHide1(this);"/>
+									<label for="restcheck">Check this box if the application is restricted. If not, leave blank.</label>
+								</div>
+								<div class="mb-3" id="shrest" style="display:none">
+									<input class="form-control" id="appRestriction" type="text" placeholder="Who is this restricted to?" data-sb-validations="required" />
+								</div>
+							</div>
+							<br/>
+							<!--App Available offline?-->
+							<br/>
+							<h4 class="font-alt">Is this app available offline?</h4>
+							<br/>
+							<div class="mb-3">
+								<div class="form-control mb-3">
+									<input type="checkbox" id="offlineCheck" data-sb-validations="required" class="form-check-input" onclick="ShowHide2(this);"/>
+									<label for="offlinecheck">Check this box if the application is available offline. If not, leave blank.</label>
+								</div>
+								<div class="mb-3" id="show_offline" style="display:none">
+									<input class="form-control" id="offlineDays" type="text" placeholder="How many days can this be offline? (Number only)" data-sb-validations="required" />
+								</div>
+							</div>
+							<!--App quirks?-->
+							<br/>
+							<h4 class="font-alt">Does this app have any quirks?</h4>
+							<br/>
+							<div class="mb-3">
+								<div class="form-control mb-3">
+									<input type="checkbox" id="quirkscheck" data-sb-validations="required" class="form-check-input" onclick="ShowHide3(this);"/>
+									<label for="offlinecheck">Check this box if the application has any quirks. If not, leave blank.</label>
+								</div>
+								<div class="mb-3" id="show_quirks" style="display:none">
+									<input class="form-control" id="quirksdesc" type="text" placeholder="What quirks does this have?" data-sb-validations="required" />
+								</div>
+							</div>
+							<br/>
+							<h4 class="font-alt">URL for more information:</h4>
+							<br/>
+							<div class="form-floating mb-3">
+								<textarea class="form-control" id="appLink" placeholder="Enter URL for more information..." data-sb-validations="required" style="min-height:100px;"></textarea>
+								<label for="name">Paste URL for more information here</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<aside style="padding-top:0;">
+				<div class="container px-5 text-center">
+					<div class="row gx-5 justify-content-center">
+						<div class="col-xl-12">
+							<div class="d-grid"><a href="#genText"><button class="btn btn-primary rounded-pill btn-lg" onclick="gen();" type="submit">Generate</button></a></div>
+						</div>
+					</div>
+				</div>
+			</aside>
+        <!-- App badge section-->
+        <section class="bg-gradient-primary-to-secondary">
+            <div class="container px-5">
+				<div class="row gx-5 justify-content-center">
+					<div class="col-xl-12">
+						<div class="form-floating mb-3">
+							<textarea class="form-control" id="genText" placeholder="Once you click Generate, your code will appear here." data-sb-validations="required" style="min-height:500px;"></textarea>
+							<label for="name">Generated code:</label>
+							<div class="invalid-feedback" data-sb-feedback="appDesc:required">A name is required.</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="bg-black text-center py-5">
+            <div class="container px-5">
+                <div class="text-white-50 small">
+                    <div class="mb-2">AppsAnywhere Description Generator.</div>
+                    <!--<a href="#!">Privacy</a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#!">Terms</a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#!">FAQ</a>-->
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+		<script>
+		  function gen() {
+		  
+			let appName = document.getElementById("appName").value;
+			let appDesc = document.getElementById("appDesc").value;
+			let appLink = document.getElementById("appLink").value;
+			let appRestriction = document.getElementById("appRestriction").value;
+			let offlineDays = document.getElementById("offlineDays").value;
+			let quirksdesc = document.getElementById("quirksdesc").value;
+			
+			// Selecting the input element and get its value 
+			let inputVal1 = '<h3>What is ' + appName + '?</h3>';
+			let inputVal2 = '<p>' + '<strong>' + appName + '</strong> ' + appDesc + '</p>';
+			let inputVal3 = '<p>For further information regarding ' + appName + ', please see: <a href="' + appLink + '">' + appLink + '</a></p>';
+			
+			var textString = "";  
+			if(document.getElementById("box1").checked) {
+				textString += "<li>Cluster Computers</li>";
+			}
+			if(document.getElementById("box2").checked) {
+				textString += "\n" + '<li><a href="https://it.leeds.ac.uk/it?id=kb_article&sysparm_article=KB0014715" target="_blank">Cluster Remote Access</a></li>';
+			 }
+			if(document.getElementById("box3").checked) {
+				textString += "\n" + '<li><a href="https://it.leeds.ac.uk/it?id=kb_article&sysparm_article=KB0014548" target="_blank">Windows Virtual Desktop</a></li>';
+			}
+			if(document.getElementById("box4").checked) {
+				textString += "\n" + "<li>Personal Windows Devices</li>";
+			}
+			if(document.getElementById("box5").checked) {
+				textString += "\n" + '<li>Personal Windows Devices<span style="color:rgb(255,0,0);">*</span></li>';
+				vpnString = '<p><span style="color:rgb(255,0,0);">*</span>Use on personal devices requires a University VPN connection. Please see the following knowledgebase article for information regarding connecting to the University VPN: <a href="https://it.leeds.ac.uk/it?id=kb_article&sysparm_article=KB0014410" target="_blank">How to connect to the University VPN</a></p>';
+			}
+			if(document.getElementById("box6").checked) {
+				textString += "\n" + "<li>Personal macOS Devices (Download only)</li>";
+			}
+			if(document.getElementById("box7").checked) {
+				textString += "\n" + "<li>Personal Linux Devices (Download only)</li>";
+			}
+			if(document.getElementById("box8").checked) {
+				textString += "\n" + "<li>macOS Devices (Download only)</li>";
+			}
+			if(document.getElementById("box9").checked) {
+				textString += "\n" + "<li>Linux Devices (Download only)</li>";
+			}
+			if(document.getElementById("box10").checked) {
+				textString += "\n" + "<li>Windows Devices (University owned - Download only)</li>";
+			}
+			if(document.getElementById("box11").checked) {
+				textString += "\n" + "<li>Staff and Postgraduate Windows Devices</li>";
+			}
+			
+			if(document.getElementById("restcheck").checked) {
+				restHeader = "<h3>Is this software restricted to specific users?</h3>";
+				restString = "\n" + "<p><strong>" + appName + "</strong> is restricted and can only be accessed by users in " + appRestriction +".</p>";
+			}
+			
+			if(document.getElementById("offlineCheck").checked) {
+				offlineHeader = "<h3>Is this software available offline?</h3>";
+				offlineString = "\n" + "<p>Yes, <strong>" + appName + "</strong> is available offline automatically for laptop devices for " + offlineDays + " days. An internet connection will then be required to re-validate for a further " + offlineDays + " days.</p>";
+			}
+			if(document.getElementById("quirkscheck").checked) {
+				quirksHeader = "<h3>Notice</h3>";
+				quirksString = "\n" + "<p><strong>" + quirksdesc + "</strong></p>";
+			}
+			
+			let listCollate = "<ul>" + "\n" + textString + "\n" + "</ul>";
+			
+			let collateAll = inputVal1;
+				collateAll += "\n";
+				collateAll += inputVal2;
+				collateAll += "\n";
+				collateAll += "\n";
+				collateAll += "<h3>Where can this software be used?</h3>";
+				collateAll += "\n";
+				collateAll += listCollate;
+				collateAll += "\n";
+				if(document.getElementById("box5").checked) {
+					collateAll += "\n";
+					collateAll += vpnString;
+					collateAll += "\n";
+				}
+				if(document.getElementById("restcheck").checked) {
+					collateAll += "\n";
+					collateAll += restHeader;
+					collateAll += restString;
+					collateAll += "\n";
+				}
+				if(document.getElementById("offlineCheck").checked) {
+					collateAll += "\n";
+					collateAll += offlineHeader;
+					collateAll += offlineString;
+					collateAll += "\n";
+				}
+				if(document.getElementById("quirkscheck").checked) {
+					collateAll += "\n";
+					collateAll += quirksHeader;
+					collateAll += quirksString;
+					collateAll += "\n";
+				}
+				collateAll += "\n";
+				collateAll += inputVal3;
+			// Displaying the value
+			document.getElementById("genText").value = collateAll;
+		  }
+		</script>
+    </body>
+</html>
