@@ -29,11 +29,13 @@
 			var showHide = document.getElementById("show_quirks");
 			showHide.style.display = quirkscheck.checked ? "block" : "none";
 		}
+	</script>
+	<script>
 		function acceptParam() {
-		  var hashParams = window.location.href.substr(1).split('?');
+		  var hashParams = window.location.href.substr(1).split('?'); // substr(1) to remove the `#`
 		      hashParams = hashParams[1].split('&');
-		      var appNameVar = hashParams[0].split('=');
-		      document.getElementById('appName').value = appNameVar[1];
+		      var p = hashParams[0].split('=');
+		      document.getElementById('appName').value = p[1];
 		 }
 	</script>
     </head>
@@ -78,7 +80,7 @@
 						<div class="col-xl-12">
 							<!-- App Name input-->
 							<div class="form-floating mb-3">
-								<input class="form-control" id="appName" type="text" placeholder="Enter software name..." data-sb-validations="required" />
+								<input class="form-control" id="appName" type="text" placeholder="Enter software name..." data-sb-validations="required" value=""/>
 								<label for="name">Software Name</label>
 								<div class="invalid-feedback" data-sb-feedback="appName:required">A name is required.</div>
 							</div>
