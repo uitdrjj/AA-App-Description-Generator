@@ -16,20 +16,26 @@
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-		<script type="text/javascript">
-			function ShowHide1(restcheck) {
-				var showHide = document.getElementById("shrest");
-				showHide.style.display = restcheck.checked ? "block" : "none";
-			}
-			function ShowHide2(offlineCheck) {
-				var showHide = document.getElementById("show_offline");
-				showHide.style.display = offlineCheck.checked ? "block" : "none";
-			}
-			function ShowHide3(quirkscheck) {
-				var showHide = document.getElementById("show_quirks");
-				showHide.style.display = quirkscheck.checked ? "block" : "none";
-			}
-		</script>
+	<script type="text/javascript">
+		function ShowHide1(restcheck) {
+			var showHide = document.getElementById("shrest");
+			showHide.style.display = restcheck.checked ? "block" : "none";
+		}
+		function ShowHide2(offlineCheck) {
+			var showHide = document.getElementById("show_offline");
+			showHide.style.display = offlineCheck.checked ? "block" : "none";
+		}
+		function ShowHide3(quirkscheck) {
+			var showHide = document.getElementById("show_quirks");
+			showHide.style.display = quirkscheck.checked ? "block" : "none";
+		}
+		function acceptParam() {
+		  var hashParams = window.location.href.substr(1).split('?');
+		      hashParams = hashParams[1].split('&');
+		      var appNameVar = hashParams[0].split('=');
+		      document.getElementById('appName').value = p[1];
+		 }
+	</script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
